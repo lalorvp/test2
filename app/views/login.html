@@ -1,0 +1,32 @@
+<div class="login-form">
+    <div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="panel-title">Acceso al Sistema</h1>
+            </div>
+            <div class="panel-body">
+                <div class="form">
+                    <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon transparent"><i class="fa fa-user fa-fw"></i></span>
+                          <input type="text" class="form-control" id="user" ng-model="user" ng-change="user = (user | uppercase)" placeholder="Ingrese usuario" required="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon transparent"><i class="fa fa-lock fa-fw"></i></span>
+                          <input type="password" class="form-control left-border-none" id="pass" ng-model="password" placeholder="Ingrese contraseña" required="">
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-default" href="">
+                  <i class="fa fa-sign-in fa-lg"></i> Ingresar
+                </a>
+                <a class="btn btn-default" ng-href="#/password_change">
+                  <i class="fa fa-pencil fa-lg"></i> Cambiar Clave
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
